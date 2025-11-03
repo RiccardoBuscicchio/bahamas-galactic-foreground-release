@@ -1,0 +1,2 @@
+**/result.hdf5 filter=lfs diff=lfs merge=lfs -text
+**/thinned_chain* filter=lfs diff=lfs merge=lfs -text

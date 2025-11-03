@@ -1,0 +1,21 @@
+name: bahamasgf
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - matplotlib
+  - astropy
+  - scipy
+  - pytables
+  - scipy
+  - ipykernel
+  - pandas
+  - h5py
+  - pip
+  - jax
+  - pathlib
+  - pip:
+    - corner
+    - git+https://github.com/FedericoPozzoli/bahamas.git@galaxy_fixes_patch
