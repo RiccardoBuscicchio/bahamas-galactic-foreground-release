@@ -1,3 +1,9 @@
 data/first_year_yorsh/yorsh*.hdf5
 # Ignore all __pycache__ directories
 **/__pycache__/
+
+# Ignore all data_pack* files in all subdirectories
+**/data_pack*
+
+# Ignore all integrated_actime* files in all subdirectories
+**/integrated_actime*
