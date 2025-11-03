@@ -10,3 +10,5 @@ data/first_year_yorsh/yorsh*.hdf5
 
 # Ignore raw results files 
 **/result_pack*.npz
+data/first_year_yorsh/yorsh_1b-1_training_sobhb.h5
+data/first_year_yorsh/yorsh_training_sobhb.h5
