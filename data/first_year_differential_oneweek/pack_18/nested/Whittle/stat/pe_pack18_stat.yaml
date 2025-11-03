@@ -1,0 +1,29 @@
+sources:
+  galactic_DWD: #_time:
+  - name: "alpha"
+    bounds: [1., 2.]
+    injected: 1.8
+  - name: "amp"
+    bounds: [-47, -40]
+    injected: -43.94309514866353
+  - name: "fknee"
+    bounds: [-4, -2]
+    injected: -2.426
+  - name: "fr1"
+    bounds: [-4, -2]
+    injected: -2.66
+  - name: "fr2"
+    bounds: [-4, -2]
+    injected: -3.5086383061657274
+  instr_noise:
+  - name: "A"
+    bounds: [1, 5]
+    injected: 3
+  - name: "P"
+    bounds: [10, 20]
+    injected: 15
+
+
+
+
+

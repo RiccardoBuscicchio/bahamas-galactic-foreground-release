@@ -1,0 +1,32 @@
+# This file is used to set up the parameters for the data and inference process.
+T: 31104000 #observation time in seconds
+dt: 10 #time step in seconds
+nseg: 1000 #number of segments
+mod: 'log' #method to coarse grain the data
+gen2: false
+
+response_num: false #flag to compute the response function to a anisotropic, stationary, and Gaussian SGWB
+
+chunk: #section dedicated to the chunk of data
+  duration: 1296000 #duration of the chunk in seconds
+
+#frange
+f1: 0.0001 #minimum frequency in Hz
+f2: 0.029 #maximum frequency in Hz
+
+#file to store and read data
+file: '../data/first_year_twoweeks/pack_24/data_pack24' #file to store full data
+fileAV: '../data/first_year_twoweeks/pack_24/data_pack24_bin' #file to store coarse grained data
+folder_plot: '../data/first_year_twoweeks/plots/'
+
+inference: #section dedicated to the inference process
+  sampler: "NUTS" #choice of the sampler
+  likelihood: "Gamma" #choice of the likelihood (Gamma, Whittle)
+  beta: 0.475298697 #inverse of temperature for Thermodynamical integration
+  warmup: 2000 #number of warmup samples
+  samples: 30000 #number of samples
+  chains: 4 #number of chains
+  chain_method: 'parallel' #parallel, vectorized, sequential
+  adapt_matrix: true
+  file: '../data/first_year_twoweeks/pack_24/data_pack24_bin' #file to read the data
+  file_post: '../data/first_year_twoweeks/pack_24/hmc/Gamma/stat/temp_13/result_pack24_Gamma_stat_temp13.npz' #file to store the posterior samples

@@ -1,0 +1,51 @@
+sources:
+  galactic_DWD_time:
+  - name: "a1"
+    bounds:
+    injected: -0.25
+  - name: "ak"
+    bounds:
+    injected: -0.27
+  - name: "b1"
+    bounds:
+    injected: -2.70
+  - name: "bk"
+    bounds:
+    injected: -2.47
+  - name: "alpha"
+    bounds: [1., 2.]
+    injected: 1.8
+  - name: "amp"
+    bounds: [-47, -40]
+    injected: -43.94309514866353   #37.35 
+  - name: "fr2"
+    bounds: [-4, -2]
+    injected: -3.5086383061657274
+  - name: "lat"
+    bounds: [-0.2, 0.2]
+    injected: -0.09664565
+  - name: "long"
+    bounds: [-2., -1.]
+    injected: -1.6259238
+  - name: "psi"
+    bounds: [-1., -0.1]
+    injected: -0.9174263248095645
+  - name: "s1"
+    bounds: [0.001, 0.1]
+    injected: 0.04156049812924856
+  - name: "s2"
+    bounds: [0.1, 0.3]
+    injected: 0.13842963137295858
+  - name: "Tobs"
+    bounds:
+    injected: 27820800.0
+  instr_noise:
+  - name: "A"
+    bounds: [1, 5]
+    injected: 3
+  - name: "P"
+    bounds: [10, 20]
+    injected: 15
+
+
+

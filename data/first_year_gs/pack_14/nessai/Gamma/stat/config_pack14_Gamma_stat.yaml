@@ -1,0 +1,37 @@
+#time array
+T: 17287200  # 6 mmonths = 15768000, 1 year = 31536000, 2 year = 63072000 
+dt: 10
+nseg: 2000
+mod: 'log'
+gen2: false
+
+response_num: false
+
+gaps:
+  #parameters for injection of modulated galaxy
+  sched_gap: 25200 #3.5 hours
+  sched_period: 1209600 #one weeks
+  unsched_gap: 0 #3 days (259200), if 0 no unscheduled gap
+  exp_scale: 1728000 #20 days
+  thresh: 86400 #1 day
+  duty_cycle: 0.
+
+#frange
+f1: 0.0001
+f2: 0.029
+
+#file to store and read data
+file: '../data/data_gs/pack_14/data_pack14'           #file to store full data
+fileAV: '../data/data_gs/pack_14/data_pack14_bin'           #file to store coarse grained data
+folder_plot: '../data/data_gs/plots/'
+
+inference:
+  sampler: "nested"
+  likelihood: "Gamma"
+  nlive: 2000
+  n_pool: 8
+  checkpointing: true
+  checkpoint_on_training: true
+  flow_config:
+  file: '../data/data_gs/pack_14/data_pack14_bin'
+  file_post: '../data/data_gs/pack_14/nessai/Gamma/stat/result_pack14_Gamma_stat.npz'

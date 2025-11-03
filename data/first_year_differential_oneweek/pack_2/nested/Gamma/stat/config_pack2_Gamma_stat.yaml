@@ -1,0 +1,33 @@
+#time array
+T: 1209600  # 6 mmonths = 15768000, 1 year = 31536000, 2 year = 63072000 
+dt: 10
+t0: 1209600
+nseg: 2000
+mod: 'log'
+
+response_num: false
+
+chunk:
+  duration: 604800
+
+#frange
+f1: 0.0001
+f2: 0.029
+
+#file to store and read data
+file: '../data/first_year_differential_oneweek/pack_2/data_pack2'
+fileAV: '../data/first_year_differential_oneweek/pack_2/data_pack2_bin'
+folder_plot: '../data/first_year_differential_oneweek/plots/'
+
+
+inference:
+  sampler: "nested"
+  method: "Gamma"
+  nlive: 1000
+  n_pool: 16
+  checkpointing: true
+  checkpoint_on_training: true
+  flow_config:
+  file: '../data/first_year_differential_oneweek/pack_2/data_pack2_bin'
+  file_post: '../data/first_year_differential_oneweek/pack_2/nested/Gamma/stat/result_pack2_Gamma_stat.npz'
+
