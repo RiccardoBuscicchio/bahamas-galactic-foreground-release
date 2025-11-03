@@ -7,3 +7,6 @@ data/first_year_yorsh/yorsh*.hdf5
 
 # Ignore all integrated_actime* files in all subdirectories
 **/integrated_actime*
+
+# Ignore raw results files 
+**/result_pack*.npz
