@@ -12,7 +12,8 @@ You are welcome to use this dataset in your research. We kindly ask you to cite 
 
 If you want to cite specifically the data release, its DOI is: 
 
-[![DOI](https://zenodo.org/badge/901868271.svg)](https://doi.org/XXYYZZ/zenodo.XXYYZZ)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17527235.svg)](https://doi.org/10.5281/zenodo.17527235)
+
 
 And the content is mapped in [github release page](https://github.com/RiccardoBuscicchio/bahamas-galactic-foreground-release/releases). 
 
